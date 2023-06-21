@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 10000;   
+} 
+header .logo {
+    color: rgb(242, 236, 242);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+} 
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover {
+    background: #fff;
+    color: black;
+}
+header .btnLogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 40px;
+    transition: .5s;
+}
+header .btnLogin:hover{
+    background-color: #fff;
+    color: black;
+}
+
+body{
+    min-height: 100vh;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    flex-wrap: wrap;
+    padding: 2rem;
+}  
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}  
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.card-wapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 440px;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(255, 255, 255, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    padding: 2rem;
+    margin: 1rem;
+}
+.card-header h2{
+    color: #fff;
+}
+.card-detail p {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #d5d5d5;
+    color: #fff;
+}
+.check {
+    color: #fff;
+}
+.nocheck{
+    color: grey;
+}
+.card-button {
+    background: plum;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0 0 0 ;
+    width: 100%;
+    height: 45px;
+}
+.card-button :hover{
+    color: black;
+    transition: 0,5s;
+}
+.card-price {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem;
+}
+.card-price p{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+
+footer {
+    background-color: black;
+}
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+} 
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+  .socialIcons a i {
+    font-size: 2em;
+    color: #2b1055;
+    opacity: 0.9;
+}
+/* Hover Effects on social Media Icons*/
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s;
+  
+} 
+.socialIcons a:hover i {
+    color: #fff;
+    transition: 0,5s;
+}
+.footerNav {
+    margin: 30px;
+} 
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}  
+.footerNav ul li a:hover {
+    opacity: 1; 
+}
+.footerBottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #fff;
+}
+  
+  

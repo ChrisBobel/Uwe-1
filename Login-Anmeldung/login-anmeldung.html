@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-anmeldung.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Loginseite</title>
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#" class="logo">Nion</a>
+        <ul>
+            <li><a href="startseite" class="register-Link" onclick="window.location.href='../Nion/Startseite/startseite.html';">Home</a></li>
+            <li><a href="#"class="register-Link" onclick="window.location.href='../Login-Register/login-register.html';">Updates</a></li>
+            <li><a href="#"class="register-Link" onclick="window.location.href='../Login-Register/login-register.html';">Pricing</a></li>
+            <li><a href="#"class="register-Link" onclick="window.location.href='../Login-Register/login-register.html';">FAQ</a></li>
+            <li><button class="btnLogin">Login</button></li>
+        </ul>
+    </header>
+
+    <section class="Login" id="Loginseite">  
+        <img src="Hintergrund1.png" id="Hintergrund1">
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2> Willkommen zurück </h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="e-amil" required>
+                        <label>E-Mail-Adresse</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Passwort</label> 
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Angemeldet bleiben?</label>
+                        <a href="#"> Passwort vergessen?</a>
+                    </div>
+                    <button type="submit" class="btn">Anmelden</button>
+                    <div class="login-register">
+                        <p> Neu bei NION? <a href="#" class="register-Link" onclick="window.location.href='../Login-Register/login-register.html';"> registieren </a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons"> 
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="" onclick="window.location.href='../Nion/Contact/contact.html';">Contact</a></li>
+                    <li><a href="">Job</a></li>
+                    <li><a href="">Impressum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2023 </p>
+        </div>
+    </footer>
+</body>
+</html>
